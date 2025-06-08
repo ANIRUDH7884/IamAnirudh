@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anirudh | Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body
+    class="dark-mode"
+    data-bs-spy="scroll"
+    data-bs-target="#sidebar"
+    data-bs-offset="70"
+  >
+    <!-- Mobile toggle button (hidden on desktop) -->
+    <button class="btn btn-primary mobile-toggle d-none" id="mobileToggle">
+      <i class="bi bi-list" style="margin-left: -8.5px"></i>
+    </button>
+    <!-- Sidebar Navigation -->
+    <div id="sidebar">
+      <div class="logo d-flex align-items-center">
+        <i class="bi bi-code-slash logo-icon"></i>
+        <span class="logo-text text">Anirudh</span>
+      </div>
+
+      <ul class="nav flex-column mt-3">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">
+            <i class="bi bi-house-door"></i>
+            <span class="text">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">
+            <i class="bi bi-person"></i>
+            <span class="text">About</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education-skills">
+            <i class="bi bi-mortarboard-fill"></i>
+            <span class="text">Learnings</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">
+            <i class="bi bi-folder"></i>
+            <span class="text">Projects</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">
+            <i class="bi bi-envelope"></i>
+            <span class="text">Contact</span>
+          </a>
+        </li>
+      </ul>
+
+      <button id="darkModeToggle" title="Toggle Dark Mode">
+        <i class="bi bi-moon"></i>
+        <span class="text"></span>
+      </button>
+    </div>
+
+    <!-- Home Section -->
+<section id="home" class="d-flex align-items-center py-5 py-lg-7 position-relative overflow-hidden min-vh-100">
+  <!-- Simplified Animated Background Elements (icons only) -->
+  <div class="home-bg-elements d-none d-lg-block">
+    <div class="tech-icon-shape shape-1 floating">
+      <i class="fab fa-react"></i>
+    </div>
+    <div class="tech-icon-shape shape-2 floating delay-1">
+      <i class="fab fa-js"></i>
+    </div>
+    <div class="tech-icon-shape shape-3 floating delay-2">
+      <i class="fab fa-css3-alt"></i>
+    </div>
+    <div class="tech-icon-shape shape-4 floating delay-3">
+      <i class="fab fa-node-js"></i>
+    </div>
+    <div class="tech-icon-shape shape-5 floating delay-4">
+      <i class="fas fa-database"></i>
+    </div>
+  </div>
+
+  <div class="container px-3 px-md-5">
+    <div class="row align-items-center gx-5">
+      <!-- Text Content Column -->
+      <div class="col-lg-6 order-lg-1 order-2 mt-4 mt-lg-0" data-aos="fade-right" data-aos-delay="100">
+        <div class="hero-content pe-lg-5 text-center text-lg-start">
+          <h1 class="display-3 display-md-2 display-lg-1 fw-bold mb-4">
+            <span class="greeting d-block text-primary">Hey there,</span>
+            <span class="text-gradient-primary">I'm Anirudh</span>
+          </h1>
+
+          <div class="dynamic-text-container mb-4">
+            <p class="lead typing-text fs-3 fs-lg-2">
+              <span class="text-highlight bg-primary-light px-3 py-1 rounded">Jr. Software Developer</span>
+              <span class="d-block d-lg-inline mt-2 mt-lg-0">building</span>
+              <span class="text-rotator text-primary fw-bold" 
+                    data-rotate='["web applications", "REST APIs", "user experiences", "scalable systems"]'>
+              </span>
+            </p>
+          </div>
+
+          <p class="hero-description mb-5 fs-5 fs-lg-4 ">
+            I specialize in creating efficient, clean-code solutions with
+            modern web technologies. Passionate about turning ideas into
+            functional, beautiful digital experiences.
+          </p>
+
+          <div class="hero-cta d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+            <a href="assets/iamAnirudh.pdf" download="Anirudh_T_Anil_CV.pdf"
+               class="btn btn-primary btn-lg px-4 py-3 shadow-sm-hover shadow-primary-hover">
+              <i class="bi bi-download me-2"></i>Download CV
+            </a>
+            <a href="#projects"
+               class="btn btn-outline-primary btn-lg px-4 py-3 border-2 shadow-sm-hover">
+              <i class="bi bi-code-slash me-2"></i>View Work
+            </a>
+          </div>
+
+          <div class="social-links mt-5 d-flex justify-content-center justify-content-lg-start gap-4">
+            <a href="https://github.com/ANIRUDH7884" class="social-icon bg-light rounded-circle p-3 shadow-sm" target="_blank">
+              <i class="bi bi-github fs-4 text-dark"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/anirudh-anil-9b7888323/" class="social-icon bg-light rounded-circle p-3 shadow-sm" target="_blank">
+              <i class="bi bi-linkedin fs-4 text-primary"></i>
+            </a>
+            <a href="https://www.instagram.com/i__anirudh.ig?igsh=bXVwOWkyZnVsY21p" class="social-icon bg-light rounded-circle p-3 shadow-sm" target="_blank">
+              <i class="bi bi-instagram fs-4 text-danger"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Column -->
+      <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0" data-aos="fade-left" data-aos-delay="200">
+        <div class="hero-image-container d-flex justify-content-center">
+          <div class="image-wrapper position-relative" style="max-width: 380px; width: 100%">
+            <div class="profile-frame position-relative">
+              <img src="assets/Untitled design (6).png"
+                   alt="Anirudh Profile"
+                   class="img-fluid profile-image rounded-4 shadow-lg">
+              <div class="profile-glow"></div>
+            </div>
+            <!-- Simplified Tech badges (icons only) -->
+            <div class="tech-badge react-badge">
+              <i class="fab fa-react"></i>
+            </div>
+            <div class="tech-badge node-badge">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <div class="tech-badge js-badge">
+              <i class="fab fa-js"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator d-none d-lg-flex flex-column align-items-center">
+    <span class="scroll-text mb-2 text-muted">Scroll Down</span>
+    <div class="mouse">
+      <div class="wheel"></div>
+      <div class="mouse-arrow animate-bounce">
+        <i class="bi bi-chevron-down"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="about-section min-vh-100 d-flex align-items-center py-5 position-relative overflow-hidden"
+    >
+      <!-- Background elements -->
+      <div class="about-bg-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+        <div class="bg-circle circle-3"></div>
+      </div>
+
+      <div class="container h-100">
+        <div class="row align-items-stretch g-5 h-100">
+          <!-- Left Column (Lottie Animation + Key Content) -->
+          <div class="col-lg-6 h-100" data-aos="zoom-in" data-aos-delay="100">
+            <div class="h-100 d-flex flex-column">
+              <!-- Lottie Animation -->
+              <div
+                class="animation-container position-relative flex-grow-1 mb-4"
+              >
+                <div
+                  class="lottie-glass-card rounded-4 h-100 w-100 d-flex align-items-center p-3"
+                >
+                  <dotlottie-player
+                    src="https://lottie.host/ee254c24-a961-438d-8c5e-d8cad99dd1cb/oNaSNOQjgl.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 100%; height: 100%; min-height: 300px"
+                    loop
+                    autoplay
+                  ></dotlottie-player>
+                </div>
+
+                <!-- Floating Tech Icons -->
+                <div class="floating-tech-icons">
+                  <div class="tech-orb react">
+                    <i class="fab fa-react"></i>
+                    <span class="tech-tooltip">React</span>
+                  </div>
+                  <div class="tech-orb node">
+                    <i class="fab fa-node-js"></i>
+                    <span class="tech-tooltip">Node.js</span>
+                  </div>
+                  <div class="tech-orb js">
+                    <i class="fab fa-js"></i>
+                    <span class="tech-tooltip">JavaScript</span>
+                  </div>
+                  <div class="tech-orb html">
+                    <i class="fab fa-html5"></i>
+                    <span class="tech-tooltip">HTML5</span>
+                  </div>
+                  <div class="tech-orb css">
+                    <i class="fab fa-css3-alt"></i>
+                    <span class="tech-tooltip">CSS3</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Moved some content to left column -->
+              <div class="glass-card rounded-4 p-4 mb-4">
+                <div class="section-header mb-4">
+                  <h2 class="fw-bold mb-3 display-5 text-gradient">
+                    <span class="greeting">Hey there,</span>
+                    <span class="name-highlight">I'm Anirudh</span> 👋
+                  </h2>
+                  <div class="animated-underline"></div>
+                </div>
+
+                <p class="intro-text fs-5 mb-4">
+                  A passionate
+                  <span class="role-highlight"
+                    >Full Stack Developer (MERN)</span
+                  >
+                  from Kerala, India, crafting
+                  <span class="text-underline">digital experiences</span> that
+                  matter.
+                </p>
+
+                <!-- Dynamic Role Typing -->
+                <div class="dynamic-role-container mb-4 p-4 rounded-4">
+                  <div class="d-flex align-items-center">
+                    <i class="fas fa-code me-3 fs-4"></i>
+                    <div>
+                      <div class="text-success fw-semibold fs-5">
+                        <span id="typed-role">MERN Stack Developer</span>
+                      </div>
+                      <div class="progress-bar mt-1"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column (Content) -->
+          <div
+            class="col-lg-6 h-100 d-flex flex-column"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="about-content-container rounded-4 h-100 d-flex flex-column"
+            >
+              <!-- Timeline -->
+              <div class="glass-card rounded-4 p-4 mb-4 flex-grow-1">
+                <h4 class="fw-bold mb-4 text-gradient">My Journey</h4>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-badge pulse">
+                      <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                      <h5 class="fw-bold mb-2">Zoople Technologies</h5>
+                      <div class="timeline-meta mb-2">
+                        <span class="badge bg-primary me-2">2022-2023</span>
+                        <span class="text-muted">MERN Stack Training</span>
+                      </div>
+                      <p class="mb-0">
+                        Intensive training with hands-on project development,
+                        building scalable and responsive web applications.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item current">
+                    <div class="timeline-badge pulse">
+                      <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                      <h5 class="fw-bold mb-2">Aquodio Technologies</h5>
+                      <div class="timeline-meta mb-2">
+                        <span class="badge bg-primary me-2">2023-Present</span>
+                        <span class="text-muted">Junior Software Engineer</span>
+                      </div>
+                      <p class="mb-0">
+                        Developing dynamic web solutions and collaborating with
+                        creative teams to bring ideas to life.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Philosophy Card -->
+              <div class="glass-card rounded-4 p-4 mb-4">
+                <div class="d-flex align-items-start">
+                  <i class="fas fa-lightbulb me-3 mt-1 fs-4"></i>
+                  <div>
+                    <h5 class="fw-bold mb-2">My Philosophy</h5>
+                    <p class="mb-0">
+                      I thrive on building meaningful digital experiences with
+                      clean code and seamless UX. Constantly learning and
+                      adapting to new technologies is my passion.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Info & CTA Buttons -->
+              <div class="glass-card rounded-4 p-4">
+                <div class="contact-info mb-4">
+                  <div class="contact-item glass-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Kerala, India</span>
+                  </div>
+                  <div class="contact-item glass-card">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:anirudhtanil85@gmail.com"
+                      >anirudhtanil85@gmail.com</a
+                    >
+                  </div>
+                  <div class="contact-item glass-card">
+                    <i class="fab fa-linkedin-in"></i>
+                    <a href="https://www.linkedin.com/in/anirudh-anil-9b7888323/" target="_blank">LinkedIn Profile</a>
+                  </div>
+                </div>
+
+                <div class="cta-buttons d-flex flex-wrap gap-3">
+                  <a
+                    href="#projects"
+                    class="btn btn-primary btn-lg btn-hover-glow"
+                  >
+                    <i class="fas fa-code me-2"></i>View My Work
+                  </a>
+                  <a
+                    href="#contact"
+                    class="btn btn-outline-primary btn-lg btn-hover-glow"
+                  >
+                    <i class="fas fa-paper-plane me-2"></i>Contact Me
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Skills Section -->
+    <section
+      id="education-skills"
+      class="min-vh-100 d-flex align-items-center py-5 position-relative"
+    >
+      <!-- Animated background elements -->
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden"
+        style="z-index: -1"
+      >
+        <dotlottie-player
+          src="https://lottie.host/77694a16-c773-4632-b7c7-55e052b48720/cYK8IQMPd4.lottie"
+          background="transparent"
+          speed="1"
+          style="width: 100%; height: 100%; opacity: 0.15"
+          loop
+          autoplay
+        >
+        </dotlottie-player>
+      </div>
+
+      <div class="container">
+        <h2 class="section-title text-center mb-5" data-aos="fade-down">
+          <span class="text-gradient">Education & Skills</span>
+        </h2>
+
+        <div class="row g-4">
+          <!-- Education Timeline with Lottie -->
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="glass-card p-4 h-100">
+              <div class="d-flex align-items-center mb-4">
+                <dotlottie-player
+                  src="https://lottie.host/22fff879-4958-4f4b-84a7-1095f0da6660/wZXRdmCTch.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 50px; height: 50px"
+                  loop
+                  autoplay
+                >
+                </dotlottie-player>
+                <h3 class="ms-3 mb-0">Education</h3>
+              </div>
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-content">
+                    <h4>Bachelor of Computer Application</h4>
+                    <p class="text-muted">
+                      Mes College Erumely (06/2021 – 03/2024)
+                    </p>
+                    <p class="location">
+                      <i class="bi bi-geo-alt"></i> Erumely, India
+                    </p>
+                    <div class="tech-tags">
+                      <span class="tag">Software Development</span>
+                      <span class="tag">Computer Applications</span>
+                    </div>
+                  </div>
+                  <div class="timeline-badge">
+                    <i class="bi bi-award-fill"></i>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-content">
+                    <h4>Higher Secondary</h4>
+                    <p class="text-muted">
+                      S.N.M.G.B.H.S.S (06/2019 – 03/2021)
+                    </p>
+                    <p class="location">
+                      <i class="bi bi-geo-alt"></i> Cherthala, India
+                    </p>
+                    <div class="tech-tags">
+                      <span class="tag">Computer Science</span>
+                    </div>
+                  </div>
+                  <div class="timeline-badge">
+                    <i class="bi bi-book-fill"></i>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-content">
+                    <h4>High School</h4>
+                    <p class="text-muted">
+                      S.N.M.G.B.H.S.S (06/2018 – 03/2019)
+                    </p>
+                    <p class="location">
+                      <i class="bi bi-geo-alt"></i> Cherthala, India
+                    </p>
+                    <div class="tech-tags">
+                      <span class="tag">Science</span>
+                      <span class="tag">Mathematics</span>
+                    </div>
+                  </div>
+                  <div class="timeline-badge">
+                    <i class="bi bi-pencil-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills with Interactive Lottie -->
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="glass-card p-4 h-100">
+              <div class="d-flex align-items-center mb-4">
+                <dotlottie-player
+                  id="skills-lottie"
+                  src="https://lottie.host/deb9d8a3-d396-419f-bb32-36381aa0cd42/iVKIQ8GsBH.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 50px; height: 50px"
+                  loop
+                  autoplay
+                >
+                </dotlottie-player>
+                <h3 class="ms-3 mb-0">Technical Skills</h3>
+              </div>
+
+              <div class="skills-grid">
+                <div class="skill-category">
+                  <h5 class="skill-heading">
+                    <i
+                      class="bi bi-layout-text-sidebar-reverse text-info me-2"
+                    ></i>
+                    Frontend
+                  </h5>
+                  <div class="skill-tags">
+                    <span class="skill-tag" data-skill="react">
+                      <i class="bi bi-react"></i> React JS
+                    </span>
+                    <span class="skill-tag" data-skill="javascript">
+                      <i class="bi bi-filetype-js"></i> JavaScript
+                    </span>
+                    <span class="skill-tag" data-skill="html">
+                      <i class="bi bi-filetype-html"></i> HTML5
+                    </span>
+                    <span class="skill-tag" data-skill="css">
+                      <i class="bi bi-filetype-css"></i> CSS
+                    </span>
+                    <span class="skill-tag" data-skill="responsive">
+                      <i class="bi bi-phone"></i> Responsive Design
+                    </span>
+                    <span class="skill-tag" data-skill="gsap">
+                      <i class="bi bi-easel"></i> GSAP
+                    </span>
+                  </div>
+                </div>
+
+                <div class="skill-category mt-3">
+                  <h5 class="skill-heading">
+                    <i class="bi bi-server text-success me-2"></i>
+                    Backend
+                  </h5>
+                  <div class="skill-tags">
+                    <span class="skill-tag" data-skill="node">
+                      <i class="bi bi-filetype-js"></i> Node.js
+                    </span>
+                    <span class="skill-tag" data-skill="express">
+                      <i class="bi bi-filetype-json"></i> Express JS
+                    </span>
+                    <span class="skill-tag" data-skill="api">
+                      <i class="bi bi-plug"></i> REST API
+                    </span>
+                  </div>
+                </div>
+
+                <div class="skill-category mt-3">
+                  <h5 class="skill-heading">
+                    <i class="bi bi-database text-warning me-2"></i>
+                    Database
+                  </h5>
+                  <div class="skill-tags">
+                    <span class="skill-tag" data-skill="mongo">
+                      <i class="bi bi-database"></i> MongoDB
+                    </span>
+                  </div>
+                </div>
+
+                <div class="skill-category mt-3">
+                  <h5 class="skill-heading">
+                    <i class="bi bi-windows text-danger me-2"></i>
+                    Desktop
+                  </h5>
+                  <div class="skill-tags">
+                    <span class="skill-tag" data-skill="csharp">
+                      <i class="bi bi-filetype-cs"></i> C#
+                    </span>
+                    <span class="skill-tag" data-skill="winforms">
+                      <i class="bi bi-window"></i> WinForms
+                    </span>
+                    <span class="skill-tag" data-skill="wpf">
+                      <i class="bi bi-window-desktop"></i> WPF
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience & Achievements -->
+          <div class="col-lg-4" data-aos="fade-left">
+            <div class="glass-card p-4 h-100">
+              <div class="d-flex align-items-center mb-4">
+                <dotlottie-player
+                  src="https://lottie.host/39c1cad9-ed50-45b3-8ba0-d8659121e7e9/T0zHAKeonO.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 50px; height: 50px"
+                  loop
+                  autoplay
+                >
+                </dotlottie-player>
+                <h3 class="ms-3 mb-0">Experience</h3>
+              </div>
+
+              <div class="experience-list">
+                <div class="exp-item">
+                  <div class="exp-header">
+                    <h5>Junior Software Engineer</h5>
+                    <span class="exp-date">2023 - Present</span>
+                  </div>
+                  <p class="exp-company">Aquodio Technologies</p>
+                  <ul class="exp-details">
+                    <li>Developed full-stack applications using MERN stack</li>
+                    <li>Implemented responsive UI components</li>
+                    <li>Collaborated with cross-functional teams</li>
+                  </ul>
+                </div>
+
+                <div class="exp-item mt-4">
+                  <div class="exp-header">
+                    <h5>MERN Stack Trainee</h5>
+                    <span class="exp-date">2022</span>
+                  </div>
+                  <p class="exp-company">Zoople Technologies</p>
+                  <ul class="exp-details">
+                    <li>Completed intensive MERN stack training</li>
+                    <li>Built real-world projects</li>
+                    <li>Learned industry best practices</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="achievements mt-4">
+                <h5 class="d-flex align-items-center">
+                  <dotlottie-player
+                    src="https://lottie.host/9a74f3a9-d287-43f9-8d1b-3b350f6db228/yfIoXSSRhJ.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 30px; height: 30px"
+                    loop
+                    autoplay
+                  >
+                  </dotlottie-player>
+                  <span class="ms-2">Achievements</span>
+                </h5>
+                <div class="achievement-tags">
+                  <span class="achievement-tag">
+                    <i class="bi bi-trophy"></i> Built 10+ Projects
+                  </span>
+                  <span class="achievement-tag">
+                    <i class="bi bi-lightbulb"></i> Problem Solver
+                  </span>
+                  <span class="achievement-tag">
+                    <i class="bi bi-code-square"></i> Clean Code Advocate
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project section -->
+    <section id="projects" class="project-section min-vh-100">
+      <div class="section-header">
+        <h2 class="section-title" data-aos="fade-down">
+          <span class="highlight">Featured</span> Projects
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Swipe to explore my recent work
+        </p>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper project-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide" data-aos="zoom-in" data-aos-delay="200">
+              <div class="project-card">
+                <div class="project-image-container">
+                  <img
+                    src="assets/Netflix.jpg"
+                    alt="Netflix Clone"
+                    class="project-image"
+                    loading="lazy"
+                  />
+                  <div class="project-overlay">
+                    <div class="tech-stack">
+                      <span class="tech-tag">React</span>
+                      <span class="tech-tag">Firebase</span>
+                      <span class="tech-tag">TMDB API</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5>Netflix Clone</h5>
+                  <p class="project-description">
+                    A responsive Netflix clone with movie trailers and user
+                    authentication
+                  </p>
+                  <div class="project-links">
+                    <a
+                      href="https://netflix-nine-wheat.vercel.app/"
+                      class="view-btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="bi bi-eye-fill"></i> Live Demo
+                    </a>
+                    <a
+                      href="#"
+                      class="code-btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="bi bi-github"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide" data-aos="zoom-in" data-aos-delay="250">
+              <div class="project-card">
+                <div class="project-image-container">
+                  <img
+                    src="assets/Nike.jpg"
+                    alt="Nike Landing Page"
+                    class="project-image"
+                    loading="lazy"
+                  />
+                  <div class="project-overlay">
+                    <div class="tech-stack">
+                      <span class="tech-tag">HTML/CSS</span>
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">GSAP</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5>Nike UI</h5>
+                  <p class="project-description">
+                    Interactive Nike product page with smooth animations
+                  </p>
+                  <div class="project-links">
+                    <a
+                      href="https://nike1-sand.vercel.app/"
+                      class="view-btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="bi bi-eye-fill"></i> Live Demo
+                    </a>
+                    <a
+                      href="#"
+                      class="code-btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="bi bi-github"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide" data-aos="zoom-in" data-aos-delay="300">
+              <div class="project-card">
+                <div class="project-image-container">
+                  <img
+                    src="assets/starbucks.png"
+                    alt="Starbucks"
+                    class="project-image"
+                    loading="lazy"
+                  />
+                  <div class="project-overlay">
+                    <div class="tech-stack">
+                      <span class="tech-tag">React</span>
+                      <span class="tech-tag">CSS Modules</span>
+                      <span class="tech-tag">Responsive</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5>StarBucks Clone</h5>
+                  <p class="project-description">
+                    Responsive Starbucks landing page with product showcase
+                  </p>
+                  <div class="project-links">
+                    <a
+                      href="https://starbucks-dyta.vercel.app/"
+                      class="view-btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="bi bi-eye-fill"></i> Live Demo
+                    </a>
+                    <a
+                      href="#"
+                      class="code-btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="bi bi-github"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide" data-aos="zoom-in" data-aos-delay="350">
+              <div class="project-card">
+                <div class="project-image-container">
+                  <img
+                    src="assets/writo.avif"
+                    alt="Task Manager"
+                    class="project-image"
+                    loading="lazy"
+                  />
+                  <div class="project-overlay">
+                    <div class="tech-stack">
+                      <span class="tech-tag">MERN Stack</span>
+                      <span class="tech-tag">JWT Auth</span>
+                      <span class="tech-tag">Redux</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5>Writo</h5>
+                  <p class="project-description">
+                    Full-featured task management application with user accounts
+                  </p>
+                  <div class="project-links">
+                    <a
+                      href="https://writo-beta.vercel.app/"
+                      class="view-btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="bi bi-eye-fill"></i> Live Demo
+                    </a>
+                    <a
+                      href="#"
+                      class="code-btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="bi bi-github"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide" data-aos="zoom-in" data-aos-delay="400">
+              <div class="project-card">
+                <div class="project-image-container">
+                  <img
+                    src="assets/Anir.png"
+                    alt="Portfolio"
+                    class="project-image"
+                    loading="lazy"
+                  />
+                  <div class="project-overlay">
+                    <div class="tech-stack">
+                      <span class="tech-tag">HTML/CSS</span>
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">SwiperJS</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5>Portfolio</h5>
+                  <p class="project-description">
+                    Interactive personal portfolio with animated elements
+                  </p>
+                  <div class="project-links">
+                    <a
+                      href="https://anirudh-profile-nu.vercel.app/"
+                      class="view-btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="bi bi-eye-fill"></i> Live Demo
+                    </a>
+                    <a
+                      href="#"
+                      class="code-btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="bi bi-github"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="view-all-container" data-aos="fade-up" data-aos-delay="500">
+        <a href="#" class="view-all-btn">
+          View All Projects <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="contact" class="contact-section">
+      <!-- Decorative elements -->
+      <div class="contact-bg-circle top-right"></div>
+      <div class="contact-bg-circle bottom-left"></div>
+      <div class="contact-bg-square"></div>
+
+      <div class="container">
+        <div class="contact-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's build something amazing together</p>
+          <div class="animated-underline"></div>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info-card">
+            <div class="contact-info-group">
+              <h3 class="info-title">
+                <i class="fas fa-paper-plane"></i> Contact Information
+              </h3>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info-text">
+                  <h4>Location</h4>
+                  <p>Kerala, India</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info-text">
+                  <h4>Email</h4>
+                  <a href="mailto:anirudhtanil85@gmail.com"
+                    >anirudhtanil85@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="info-text">
+                  <h4>Phone</h4>
+                  <a href="tel:+1234567890">+91 6238987884</a>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/anirudh-anil-9b7888323/" class="social-link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="https://github.com/ANIRUDH7884" class="social-link"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://www.instagram.com/i__anirudh.ig?igsh=bXVwOWkyZnVsY21p" class="social-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required />
+                <div class="input-underline"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required />
+                <div class="input-underline"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+                <div class="input-underline"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+                <div class="input-underline"></div>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <i class="fas fa-paper-plane btn-icon"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
